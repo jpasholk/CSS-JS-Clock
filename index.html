@@ -7,6 +7,9 @@
 </head>
 <body>
 
+  <header class="header">
+    <h2>CSS & JavaScript Clock</h2>
+  </header>
 
     <div class="clock">
       <div class="clock-face">
@@ -16,6 +19,9 @@
       </div>
     </div>
 
+    <footer class="footer">
+      <p>A JavaScript30 project by jpasholk.</p>
+    </footer>
 
   <style>
     html {
@@ -30,7 +36,7 @@
       margin: 0;
       font-size: 2rem;
       display: flex;
-      flex: 1;
+      flex-direction: column;
       min-height: 100vh;
       align-items: center;
     }
@@ -78,6 +84,29 @@
     }
     .hour-hand {
       height: 3px;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      color: #d3d3d3;
+      font-size: 4.2rem;
+      text-shadow: 0 0 .5rem black;
+      transition: all .075s ease;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      color: #d3d3d3;
+      font-size: 1.8rem;
+      text-shadow: 0 0 .5rem black;
+    }
+    header {
+      background-color: rgba(0,0,0,0.5);
+      width: 100%;
+    }
+    footer {
+      background-color: rgba(0,0,0,0.25);
+      width: 100%;
     }
   </style>
 
